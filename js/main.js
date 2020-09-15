@@ -3,7 +3,7 @@
             $("#preloader").remove("#preloader");
             $("body").removeAttr("style");
     }
-    $(".carousel-item1>img").on("load", preloaded);
+    $(".carousel-item>img").first().on("load", preloaded);
 
      setTimeout(function() {
                 if(document.querySelector(".carousel-item > img").complete && $("#preloader").length) {
